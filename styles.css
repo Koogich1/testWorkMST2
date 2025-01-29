@@ -1,0 +1,162 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: "Open Sans", serif;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: #000;
+}
+
+.video-container{
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	position: relative;
+}
+
+.text-container{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	color: aliceblue;
+}
+.block-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    max-height: 200px;
+    background-color: #000;
+    margin: -1px 0;
+}
+
+.font-style{
+    font-weight: 900;
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    font-size: 6vw;
+}
+
+.font-style:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+
+.firstBlock-container{
+    width: 35%;
+}
+.holefirstBlock{
+    width: 38%;
+}
+.firstBlock-container2{
+    width: 27%;
+}
+
+.first{
+    mask-image: 
+    linear-gradient(to right, black 0%, black 33.5%, transparent 33.5%, transparent 74.5%, black 74.5%, black 100%),
+    linear-gradient(to bottom, black 0%, black 10%, transparent 0%, transparent 90%, black 90%, black 100%);
+}
+
+.second{
+    mask-image:
+    linear-gradient(to right, black 0%, black 24.5%, transparent 24.5%, transparent 53.5%, black 53.5%, black 100%),
+    linear-gradient(to bottom, black 0%, black 10%, transparent 0%, transparent 90%, black 90%, black 100%);
+    ;
+}
+
+.third{
+    mask-image:
+    linear-gradient(to right, black 0%, black 32.5%, transparent 32.5%, transparent 67.8%, black 67%, black 100%),
+    linear-gradient(to bottom, black 0%, black 10%, transparent 0%, transparent 90%, black 90%, black 100%);
+    ;
+}
+
+.fourth{
+    mask-image:
+    linear-gradient(to right, black 0%, black 37%, transparent 37%, transparent 99.5%, black 99.5%, black 100%),
+    linear-gradient(to bottom, black 0%, black 10%, transparent 0%, transparent 90%, black 90%, black 100%);
+    ;
+}
+
+.five{
+    padding-bottom: 500vh;
+}
+
+/* Small block style */
+
+.one{
+    mask-image:
+    linear-gradient(to right, black 0%, black 44%, transparent 34%, transparent 99.5%, black 99.5%, black 100%),
+    linear-gradient(to bottom, black 0%, black 10%, transparent 0%, transparent 90%, black 90%, black 100%);
+    ;
+}
+
+.two{
+    mask-image:
+    linear-gradient(to right, black 0%, black 11%, transparent 11%, transparent 76%, black 76%, black 100%),
+    linear-gradient(to bottom, black 0%, black 10%, transparent 0%, transparent 90%, black 90%, black 100%);
+    ;
+}
+
+.three{
+    mask-image:
+    linear-gradient(to right, black 0%, black 0.5%, transparent 0.5%, transparent 47.6%, black 47.6%, black 100%),
+    linear-gradient(to bottom, black 0%, black 10%, transparent 0%, transparent 90%, black 90%, black 100%);
+    ;
+}
+
+.four{
+    mask-image:
+    linear-gradient(to right, black 0%, black 67%, transparent 67%, transparent 99.5%, black 99.5%, black 100%),
+    linear-gradient(to bottom, black 0%, black 10%, transparent 0%, transparent 90%, black 90%, black 100%);
+    ;
+}
+
+.six{
+    mask-image:
+    linear-gradient(to right, black 0%, black 16.5%, transparent 16.5%, transparent 58%, black 58%, black 100%),
+    linear-gradient(to bottom, black 0%, black 10%, transparent 0%, transparent 90%, black 90%, black 100%);
+    ;
+}
+
+.seven{
+    mask-image:
+    linear-gradient(to right, black 0%, black 49%, transparent 49%, transparent 99.5%, black 99.5%, black 100%),
+    linear-gradient(to bottom, black 0%, black 10%, transparent 0%, transparent 90%, black 90%, black 100%);
+    ;
+}
+
+@media (min-width: 801px) {
+    .text-container.small {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .text-container.large {
+        display: none;
+        opacity: 0;
+    }
+    .font-style{
+        font-size: 8vw;
+    }
+}
